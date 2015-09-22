@@ -11,8 +11,30 @@ public class BMIService {
 	}
 	
 	public static String getDescription(Float bmiIndex) {
-		//TODO to be implemented as home work
-		return "";
+		String result;
+		if(bmiIndex <17){
+			result = "Muito abaixo do peso";
+		}
+		else if(bmiIndex <= 18.49){
+			result = "Abaixo do peso";
+		}
+		else if(bmiIndex <= 24.99){
+			result = "Peso normal";
+		}
+		else if(bmiIndex <= 29.99){
+			result =  "Acima do peso";
+		}
+		else if(bmiIndex <= 34.99){
+			result = "Obesidade I";
+		}
+		else if(bmiIndex <=39.99){
+			result = "Obesidade II";
+		}
+		else{
+			result = "Obesidade III";
+		}
+		
+		return result;
 	}
 
 }

@@ -5,7 +5,7 @@ var BMIService = {
 		  url: 'BMIController',
 		  data: {'weight': weight, 'height': height},
 		  success: function(result) {
-		  	callback(parseFloat(result));
+		  	callback(result);
 		  },
 		  error: function() {
 		  	callback(null);
@@ -14,7 +14,7 @@ var BMIService = {
 	},
 	
 	getDescription: function (index) {
-		//TODO to be implemented
+		
 		return "";
 	}
 	
